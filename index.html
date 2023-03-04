@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Bee's Knees</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <style>
+      #website-logo {
+        width: 55%;
+        height: 150px;
+        float: left;
+      }
+      #contact {
+        width: 45%;
+        height: 150px;
+        float: left;
+        text-align: left;
+      }
+      .hai {
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.4);
+        position:fixed;
+        width: 861.5px;
+        padding: 20px;
+      }
+      #test {
+        width: 900px;
+        height:500px;
+        background-color: #f1f1f1;
+        background-image: url(https://i.imgur.com/thH4Z0U.png);
+        background-size: cover;
+        border: 1px solid black;
+        margin-left: 260px;
+      }
+
+      img {
+        border: 3px solid black;
+        width: 85px;
+        height: 85px;
+      }
+      body {
+        background-image: url('https://img.freepik.com/free-photo/hand-drawn-sunflower-yellow-background_53876-119866.jpg?w=2000');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+</head>
+    <body>
+        <script>
+            function trackClick(event)
+            {
+              var x = event.clientX;
+              var y = event.clientY;
+              document.getElementById("coord").innerHTML = "X,Y: " + x + ", " + y;
+              if(x>446 && x<478 && y>53 && y<60){
+                document.getElementById("image1").src = 'https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg';
+                alert("Butterfly Found!");
+              }
+              else if(x>866 && x<875 && y>106 && y<184){
+                document.getElementById("image2").src = 'https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg';
+                alert("Caterpillar Found!");
+            }
+              else if(x>1096 && x<1112 && y>367 && y<373){
+                document.getElementById("image3").src = 'https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg';
+                alert("Garden Gnome Found!");
+            }
+              else if(x>741 && x<763 && y>340 && y<352){
+                document.getElementById("image4").src = 'https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg';
+                alert("Gloves Found!");
+            }
+              else if(x>368 && x<394 && y>500 && y<508){
+                document.getElementById("image5").src = 'https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg';
+                alert("Watering Can Found!");
+            }
+            else if(x>681 && x<728 && y>39 && y<89){
+                document.getElementById("image1").src = 'https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogVShlMA8=&rs=AOn4CLCJ9RIh-_gj3a0W8l6CngMsNnW1aQ';
+                document.getElementById("image2").src = 'https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogVShlMA8=&rs=AOn4CLCJ9RIh-_gj3a0W8l6CngMsNnW1aQ';
+                document.getElementById("image3").src = 'https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogVShlMA8=&rs=AOn4CLCJ9RIh-_gj3a0W8l6CngMsNnW1aQ';
+                document.getElementById("image4").src = 'https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogVShlMA8=&rs=AOn4CLCJ9RIh-_gj3a0W8l6CngMsNnW1aQ';
+                document.getElementById("image5").src = 'https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoAC8AGKAgwIABABGFogVShlMA8=&rs=AOn4CLCJ9RIh-_gj3a0W8l6CngMsNnW1aQ';
+            }
+          }
+            </script>
+        
+          
+        <div id="test" onclick="trackClick(event)"  onmouseout="clearstuff()"></div>
+        <p id="coord" style="color: black; font-size: 0px;">X,Y: </p>
+
+        <div style="margin-left: 260px;" class="hai"> 
+          <div id="contact">
+            <h1 style="font-family: 'Phudu', cursive; font-size: 40px; float:left; margin-right: 20px; margin-bottom: 5px; color:#f4ff24;">Not the Bees!</h1>
+          <h1 style="font-family: 'Phudu', cursive; font-size: 25px; float:left; margin-right: 20px; color:white;">By Capule, Mancao, Rosales</h1>
+          </div>
+          <div id="website-logo">
+            <br> <br>
+            <img id="image1" src="https://i.imgur.com/8nCxlFA.png" alt="butterfly sis">
+            <img id="image2" src="https://i.imgur.com/C25gMxs.png" alt="caterpillar sis">
+            <img id="image3" src="https://i.imgur.com/UbnswCt.png" alt="garden gnome sis">
+            <img id="image4" src="https://i.imgur.com/FChSUBa.png" alt="gloves sis"> 
+            <img id="image5" src="https://i.imgur.com/zGGtNEg.png" alt="watering can sis">
+          </div>     
+        </div>
+    </body>
+</html>
